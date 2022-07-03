@@ -11,7 +11,7 @@ using namespace std;
 
 int image() 
 {
-	string path = "test.jpg";
+	string path = "Resources\\test.jpg";
 	Mat img = imread(path);
 	imshow("Image", img);
 	waitKey(0);
@@ -24,8 +24,7 @@ int image()
 
 int video() 
 {
-
-	string path = "test.mp4";
+	string path = "Resources\\test.mp4";
 	VideoCapture cap(path);
 	Mat img;
 
@@ -57,9 +56,9 @@ int camera()
 
 int main(void)
 {
-	//image();
+	image();
 	//video();
-	camera();
+	//camera();
 
 	return 0;
 }
